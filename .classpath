@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/jflex"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="JARs/boilerpipe-1.2.2.jar"/>
+	<classpathentry kind="lib" path="JARs/nekohtml-1.9.18.jar"/>
+	<classpathentry kind="lib" path="JARs/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="JARs/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
