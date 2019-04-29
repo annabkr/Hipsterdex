@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'java-library'
+apply plugin: 'application'
+apply plugin: 'eclipse' 
+
+repositories { 
+    jcenter()
+    
+
+}
+
+
+dependencies {   	 
+	// https://mvnrepository.com/artifact/com.syncthemall/boilerpipe
+	compile group: 'com.syncthemall', name: 'boilerpipe', version: '1.2.1'
+	
+    implementation 'com.google.guava:guava:23.0'
+    testImplementation 'junit:junit:4.12'
+}
+
+mainClassName = 'hipsterdex.Hipsterdex'
