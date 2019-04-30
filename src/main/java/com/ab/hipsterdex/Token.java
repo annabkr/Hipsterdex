@@ -1,10 +1,31 @@
 package com.ab.hipsterdex;
 
+/**
+ * Token Class - stores the token type, lexeme (character string), 
+ * and the location of the token (row and column).
+ * @author annabaker
+ *
+ */
+
 public class Token implements Cloneable {
 	private TokenType type;
 	private int row;
 	private int column;
 	private String lexeme;
+	
+	
+	 /**
+     * Create a basic token with no explicit lexeme.
+     * @param theKind the kind of token
+     * @param line line number where token was found
+     * @param column column number where token begins
+     */
+    public Token (final TokenType tokenType, final int r, final int c) {
+        type = tokenType;
+        lexeme = "";
+        row = r;
+        column = c;
+    }
 	
 	/**
 	 * Constructor that accepts an existing lexeme
@@ -99,7 +120,11 @@ public class Token implements Cloneable {
 	
 	@Override
 	public String toString() {
-		return this.type.toString() + ":" + this.getLexeme();
+		 if (getLexeme().length() > 0) {
+	            return getType().toString() + ":" + getLexeme();
+	        } else {
+	            return getType().toString();
+	        }
 	}
 	
 }

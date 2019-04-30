@@ -8,6 +8,7 @@ import de.l3s.boilerpipe.extractors.ArticleExtractor;
  
 
 public class Hipsterdex {
+	
 	static public void main(String[] args) throws Exception {
 		
 		//	StringReader t = new StringReader("Trump says 'My sick AF idea':");

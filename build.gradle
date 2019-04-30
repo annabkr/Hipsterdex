@@ -18,4 +18,4 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
-mainClassName = 'hipsterdex.Hipsterdex'
+mainClassName = 'com.ab.hipsterdex.Hipsterdex'
