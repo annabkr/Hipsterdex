@@ -1,5 +1,5 @@
 package com.ab.hipsterdex;
-
+ 
 import java.io.*;    
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -10,23 +10,28 @@ import de.l3s.boilerpipe.extractors.ArticleExtractor;
 public class Hipsterdex {
 	static public void main(String[] args) throws Exception {
 		
-		//	StringReader t = new StringReader("Trump says 'My sick AF idea':");
+			StringReader t = new StringReader("Fruitarians don't eat dogs");
 			
-		//	TokenStream s = new TokenStream(t); 
+			TokenStream ts1 = new TokenStream(t); 
 			
-			try {
-				URL url = new URL("https://www.instagram.com/janebrink/");
-				 
-				StringReader text = new StringReader(ArticleExtractor.INSTANCE.getText(url)); 
+			System.out.println(ts1.getTokenStream().toString());
+			System.out.println(ts1.getNumTokens());
 			 
-				TokenStream ts = new TokenStream(text);
+			 
+			
+		//	try {
+		//		URL url = new URL("Counting tokens Fruitarian fruitarian");
 				
-				System.out.println(ts.getNumTokens()); 
+		//		StringReader text = new StringReader(ArticleExtractor.INSTANCE.getText(url)); 
+			 
+		//		TokenStream ts = new TokenStream(text);
+				
+		//		System.out.println(ts.getNumTokens()); 
 				
 				
-			} catch (IOException e) {
-				System.out.println("I/O Error: " + e.getMessage());
-			}
+		//	} catch (IOException e) {
+		//		System.out.println("I/O Error: " + e.getMessage());
+		//	}
 	     
 			
 		 

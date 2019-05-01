@@ -1,5 +1,15 @@
 package com.ab.hipsterdex;
 
+import java.io.*;
+import com.ab.hipsterdex.TokenType;
+
+/**
+ * Token class - stores the type, the lexeme (character string), and
+ * location (row and column) in the source.
+ * @author annab
+ *
+ */
+
 public class Token implements Cloneable {
 	private TokenType type;
 	private int row;
@@ -27,6 +37,8 @@ public class Token implements Cloneable {
 	public Token(Token t) {
 		this.type = t.type;
 		this.lexeme = new String(t.lexeme);
+		this.row = t.row;
+		this.column = t.column;
 	}
 	
 	/**

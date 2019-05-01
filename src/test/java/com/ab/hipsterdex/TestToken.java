@@ -1,6 +1,6 @@
 package com.ab.hipsterdex;
-
 import static org.junit.Assert.*;
+import com.ab.hipsterdex.Token;
 
 import org.junit.Test; 
 

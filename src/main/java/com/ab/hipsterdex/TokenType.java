@@ -6,8 +6,4 @@ public enum TokenType {
 	SEMIHIPSTER,
 	NOTHIPSTER,
 	SYMBOL;
-	
-	public String toString() {
-		return this.toString();
-	}
 }
