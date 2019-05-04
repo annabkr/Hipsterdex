@@ -10,7 +10,7 @@ public class TestToken {
 	Token t1;
 	Token t2;
 	Token toCopy;
-	Token toClone;
+//	Token toClone;
 	
 	public TestToken() {
 		t1 = new Token(TokenType.SUPERHIPSTER, 1, 7, "");
