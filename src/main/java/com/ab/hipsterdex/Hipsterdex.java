@@ -9,14 +9,9 @@ import de.l3s.boilerpipe.extractors.ArticleExtractor;
 
 public class Hipsterdex {
 	
-	static public void main(String[] args) throws Exception {
-		
-		//	StringReader t = new StringReader("Trump says 'My sick AF idea':");
-			
-		//	TokenStream s = new TokenStream(t); 
-			
+	static public void main(String[] args) throws Exception {	
 			try {
-				URL url = new URL("https://www.instagram.com/janebrink/");
+				URL url = new URL(args[0]);
 				 
 				StringReader text = new StringReader(ArticleExtractor.INSTANCE.getText(url)); 
 			 
@@ -27,21 +22,7 @@ public class Hipsterdex {
 				
 			} catch (IOException e) {
 				System.out.println("I/O Error: " + e.getMessage());
-			}
-	     
-			
-		 
-					    
-			 
-		//	String s = "Hello";
-		//	Reader reader = new StringReader(s);  
-		//	TokenStream t = new TokenStream(reader);
-			
-		//	int numTokens = t.getNumTokens();
-		//	StringBuilder result = t.getTokenStream();
-			
-		//	System.out.println(result.toString());
-		//	System.out.println(numTokens);
+			} 
 			
 		}
 	
